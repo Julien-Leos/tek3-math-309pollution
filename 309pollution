@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import sys
+import parsing
+import core
+
+sys.argv.pop(0)
+args = parsing.parse(sys.argv)
+
+core = core.Core(args)
+core.bezierSurface()
+core.displayResult()
